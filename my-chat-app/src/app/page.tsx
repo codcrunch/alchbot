@@ -15,7 +15,7 @@ const ChatInterface: React.FC = () => {
     setInputText(e.target.value);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     console.log("Sending message:", inputText);
